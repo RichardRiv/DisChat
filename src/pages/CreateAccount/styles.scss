@@ -23,8 +23,8 @@ $xlg: 1200px;
 		transform: translate(-50%, -50%);
 		margin: 0;
 		position: absolute;
-		width: 50vw;
-		height: 60vh;
+		width: 32vw;
+		height: 90vh;
 		border-radius: 50px;
 		background: linear-gradient(145deg, #2c2e32, #34373c);
 		box-shadow: 20px 20px 60px #2a2b30, -20px -20px 60px #383b40;
@@ -43,13 +43,6 @@ $xlg: 1200px;
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			margin-bottom: 1%;
 			margin-top: 7%;
-		}
-		.sub-header {
-			text-align: center;
-			color: #bfc0c2;
-			font-size: large;
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-			margin-top: 0%;
 		}
 	}
 }

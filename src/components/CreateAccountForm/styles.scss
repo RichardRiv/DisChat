@@ -1,0 +1,60 @@
+$xsm: 400px;
+$sm: 600px;
+$md: 800px;
+$lg: 1000px;
+$xlg: 1200px;
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10vw;
+
+	input {
+		background-color: #1e1f22;
+		border: none;
+		width: 28.9vw;
+		height: 5vh;
+		margin-bottom: 10px;
+		color: #b5bac0;
+		border-radius: 5px;
+		padding-left: 10px;
+
+		&:focus-visible {
+			outline: none;
+		}
+
+		@media (min-width: $xsm) and (max-width: $sm) {
+			width: 77vw;
+		}
+	}
+
+	label {
+		color: #b5bac0;
+		font-size: small;
+		margin-bottom: 8px;
+	}
+
+	span {
+		color: #fa777c;
+		margin-bottom: 8px;
+	}
+
+	.submit-btn {
+		width: 29.7vw;
+		height: 6vh;
+		background-color: #95b8da;
+		border: none;
+		border-radius: 5px;
+		color: white;
+		margin: 8px 0px;
+
+		&:hover {
+			cursor: pointer;
+			background-color: rgba(149, 184, 218, 0.9);
+		}
+
+		@media (min-width: $xsm) and (max-width: $sm) {
+			width: 80vw;
+		}
+	}
+}
