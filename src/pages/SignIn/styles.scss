@@ -4,7 +4,7 @@ $md: 800px;
 $lg: 1000px;
 $xlg: 1200px;
 
-.bg {
+.signIn-bg {
 	background: rgb(112, 229, 212);
 	background: linear-gradient(
 		160deg,
@@ -17,7 +17,7 @@ $xlg: 1200px;
 		height: 100%;
 	}
 
-	.container {
+	.signIn-container {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -36,7 +36,7 @@ $xlg: 1200px;
 			box-shadow: none;
 		}
 
-		.header {
+		.signIn-header {
 			text-align: center;
 			color: #f2f3f5;
 			font-size: x-large;
@@ -44,7 +44,7 @@ $xlg: 1200px;
 			margin-bottom: 1%;
 			margin-top: 7%;
 		}
-		.sub-header {
+		.signIn-sub-header {
 			text-align: center;
 			color: #bfc0c2;
 			font-size: large;

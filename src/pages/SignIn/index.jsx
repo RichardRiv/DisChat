@@ -3,10 +3,10 @@ import SignInForm from '../../components/SignInForm';
 
 const SignIn = () => {
 	return (
-		<div className="bg">
-			<div className="container">
-				<p className="header">Welcome Back!</p>
-				<p className="sub-header">We are so excited to see you again!</p>
+		<div className="signIn-bg">
+			<div className="signIn-container">
+				<p className="signIn-header">Welcome Back!</p>
+				<p className="signIn-sub-header">We are so excited to see you again!</p>
 				<SignInForm />
 			</div>
 		</div>

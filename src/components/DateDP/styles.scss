@@ -1,0 +1,95 @@
+/* 
+NOTES: 
+  align-items vertically centers & justify content horizontally centers
+  justify-content: center; 
+*/
+
+$xsm: 400px;
+$sm: 600px;
+$md: 800px;
+$lg: 1000px;
+$xlg: 1200px;
+
+.date-dp {
+	margin-bottom: 8px;
+
+	.dob-label {
+		font-size: small;
+		color: #b5bac1;
+		font-weight: bold;
+
+		.star-color {
+			color: #f23f42;
+		}
+	}
+
+	.date-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 28.3vw;
+		margin-top: 8px;
+
+		@media (min-width: $xsm) and (max-width: $sm) {
+			width: 90vw;
+		}
+
+		.date-text-icon {
+			display: flex;
+			align-items: center;
+			padding: 0% 2% 0% 2%;
+			// width: 7.5vw;
+			width: 8vw;
+			height: 5vh;
+			color: #949ba4;
+
+			@media (min-width: $xsm) and (max-width: $sm) {
+				width: 28vw;
+			}
+		}
+
+		.dy-text-icon {
+			width: 7vw;
+
+			@media (min-width: $xsm) and (max-width: $sm) {
+				width: 23vw;
+			}
+		}
+
+		.dropdown-icon {
+			width: 2vw;
+			margin-left: auto;
+			fill: #b5bac1;
+
+			&:hover {
+				cursor: pointer;
+				fill: #dbdee1;
+			}
+
+			@media (min-width: $xsm) and (max-width: $sm) {
+				width: 6vw;
+			}
+		}
+
+		.month-click {
+			background-color: #1e1f22;
+			/* width: 8vw; */
+			padding: 0% 2% 0% 2%;
+			border-radius: 5px;
+		}
+
+		.day-click {
+			background-color: #1e1f22;
+			/* width: 8vw; */
+			padding: 0% 2% 0% 2%;
+			border-radius: 5px;
+		}
+
+		.year-click {
+			background-color: #1e1f22;
+			/* width: 8vw; */
+			padding: 0% 2% 0% 2%;
+			border-radius: 5px;
+		}
+	}
+}

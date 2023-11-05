@@ -4,12 +4,12 @@ $md: 800px;
 $lg: 1000px;
 $xlg: 1200px;
 
-.flex-container {
+.signInForm-flex-container {
 	display: flex;
 	flex-direction: column;
 	margin-left: 10vw;
 
-	input {
+	.signInForm-input {
 		background-color: #1e1f22;
 		border: none;
 		width: 28.9vw;
@@ -23,23 +23,32 @@ $xlg: 1200px;
 			outline: none;
 		}
 
+		&:hover {
+			cursor: text !important;
+		}
+
 		@media (min-width: $xsm) and (max-width: $sm) {
 			width: 77vw;
 		}
 	}
 
-	label {
+	.signInForm-label {
 		color: #b5bac0;
 		font-size: small;
 		margin-bottom: 8px;
+		font-weight: bold;
 	}
 
-	span {
+	.signInForm-span {
 		color: #fa777c;
 		margin-bottom: 8px;
 	}
 
-	.submit-btn {
+	.star-color {
+		color: #f23f42;
+	}
+
+	.signInForm-submit-btn {
 		width: 29.7vw;
 		height: 6vh;
 		background-color: #95b8da;
@@ -58,7 +67,7 @@ $xlg: 1200px;
 		}
 	}
 
-	.forgot-pswd {
+	.signInForm-forgot-pswd {
 		color: rgb(68, 155, 243);
 		text-decoration: none;
 
@@ -67,10 +76,11 @@ $xlg: 1200px;
 		}
 	}
 
-	.reg-div {
+	.signInForm-reg-div {
 		color: #bfc0c2;
 	}
-	.reg-acc {
+
+	.signInForm-reg-acc {
 		color: rgb(68, 155, 243);
 		text-decoration: none;
 	}

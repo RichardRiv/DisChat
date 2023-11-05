@@ -16,22 +16,31 @@ const SignInForm = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<div className="flex-container">
-				<label>EMAIL OR PHONE NUMBER</label>
-				<input {...register('example')} />
-				<label>PASSWORD</label>
-				<input {...register('exampleRequired', { required: true })} />
-				{errors.exampleRequired && <span>This field is required *</span>}
+			<div className="signInForm-flex-container">
+				<label className="signInForm-label">
+					EMAIL OR PHONE NUMBER <span className="star-color">*</span>
+				</label>
+				<input className="signInForm-input" {...register('example')} />
+				<label className="signInForm-label">
+					PASSWORD <span className="star-color">*</span>
+				</label>
+				<input
+					className="signInForm-input"
+					{...register('exampleRequired', { required: true })}
+				/>
+				{errors.exampleRequired && (
+					<span className="signInForm-span">This field is required *</span>
+				)}
 				{/* <input type="submit" /> */}
-				<button className="submit-btn" type="submit">
+				<button className="signInForm-submit-btn" type="submit">
 					Log In
 				</button>
-				<Link to="/reset-password" className="forgot-pswd">
+				<Link to="/reset-password" className="signInForm-forgot-pswd">
 					Forgot your password?
 				</Link>
-				<div className="reg-div">
+				<div className="signInForm-reg-div">
 					Need an account?{' '}
-					<Link to="/register" className="reg-acc">
+					<Link to="/register" className="signInForm-reg-acc">
 						Register
 					</Link>
 				</div>

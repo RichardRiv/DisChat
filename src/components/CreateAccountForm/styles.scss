@@ -4,15 +4,19 @@ $md: 800px;
 $lg: 1000px;
 $xlg: 1200px;
 
-.flex-container {
+.signUp-flex-container {
 	display: flex;
 	flex-direction: column;
-	margin-left: 10vw;
+	margin-left: 2vw;
 
-	input {
+	@media (min-width: $xsm) and (max-width: $sm) {
+		margin-left: 5vw;
+	}
+
+	.signUp-input {
 		background-color: #1e1f22;
 		border: none;
-		width: 28.9vw;
+		width: 27.5vw;
 		height: 5vh;
 		margin-bottom: 10px;
 		color: #b5bac0;
@@ -24,29 +28,34 @@ $xlg: 1200px;
 		}
 
 		@media (min-width: $xsm) and (max-width: $sm) {
-			width: 77vw;
+			width: 87vw;
 		}
 	}
 
-	label {
+	.signUp-label {
 		color: #b5bac0;
 		font-size: small;
-		margin-bottom: 8px;
+		margin: 15px 0px 8px 0px;
+		font-weight: bold;
+
+		.star-color {
+			color: #f23f42;
+		}
 	}
 
-	span {
+	.signUp-span {
 		color: #fa777c;
 		margin-bottom: 8px;
 	}
 
-	.submit-btn {
-		width: 29.7vw;
+	.signUp-submit-btn {
+		width: 28.3vw;
 		height: 6vh;
 		background-color: #95b8da;
 		border: none;
 		border-radius: 5px;
 		color: white;
-		margin: 8px 0px;
+		margin: 20px 0px 0px 0px;
 
 		&:hover {
 			cursor: pointer;
@@ -54,7 +63,55 @@ $xlg: 1200px;
 		}
 
 		@media (min-width: $xsm) and (max-width: $sm) {
-			width: 80vw;
+			width: 90vw;
+		}
+	}
+
+	.signUpGoogle-submit-btn {
+		width: 28.3vw;
+		height: 6vh;
+		background-color: #c25544;
+		border: none;
+		border-radius: 5px;
+		color: white;
+		margin: 20px 0px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		&:hover {
+			cursor: pointer;
+			// background-color: rgba(117, 51, 41, 0.9);
+			background-color: rgba(143, 62, 50, 0.9);
+		}
+
+		@media (min-width: $xsm) and (max-width: $sm) {
+			width: 90vw;
+		}
+	}
+
+	.signUpGithub-submit-btn {
+		width: 28.3vw;
+		height: 6vh;
+		background-color: #262626;
+		border: none;
+		border-radius: 5px;
+		color: white;
+		margin: 20px 0px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		&:hover {
+			cursor: pointer;
+			// background-color: rgba(117, 51, 41, 0.9);
+			background-color: rgba(22, 22, 22, 0.9);
+		}
+
+		@media (min-width: $xsm) and (max-width: $sm) {
+			width: 90vw;
 		}
 	}
 }

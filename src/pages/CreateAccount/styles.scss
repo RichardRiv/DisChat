@@ -4,7 +4,7 @@ $md: 800px;
 $lg: 1000px;
 $xlg: 1200px;
 
-.bg {
+.signUp-bg {
 	background: rgb(112, 229, 212);
 	background: linear-gradient(
 		160deg,
@@ -17,7 +17,7 @@ $xlg: 1200px;
 		height: 100%;
 	}
 
-	.container {
+	.signUp-container {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -36,13 +36,29 @@ $xlg: 1200px;
 			box-shadow: none;
 		}
 
-		.header {
+		.signUp-header {
 			text-align: center;
 			color: #f2f3f5;
 			font-size: x-large;
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			margin-bottom: 1%;
 			margin-top: 7%;
+		}
+
+		.signUp-sub-header {
+			font-size: small;
+			margin: 0px;
+			color: rgb(68, 155, 243);
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+
+			@media (min-width: $xsm) and (max-width: $sm) {
+				position: relative;
+				display: block;
+				top: 81%;
+				left: 5%;
+			}
 		}
 	}
 }
