@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateAccount from './pages/CreateAccount';
 import SignIn from './pages/SignIn';
 import ResetPassword from './pages/ResetPassword';
+import Channel from './pages/Channel';
 import './App.css';
 
 const ProviderWrappedApp = () => {
@@ -18,6 +19,7 @@ const App = () => {
 			<Route path="/" element={<SignIn />} />
 			<Route path="register" element={<CreateAccount />} />
 			<Route path="reset-password" element={<ResetPassword />} />
+			<Route path="channel/:id" element={<Channel />} />
 		</Routes>
 	);
 

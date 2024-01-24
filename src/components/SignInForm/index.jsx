@@ -35,9 +35,11 @@ const SignInForm = () => {
 				<button className="signInForm-submit-btn" type="submit">
 					Log In
 				</button>
-				<Link to="/reset-password" className="signInForm-forgot-pswd">
-					Forgot your password?
-				</Link>
+				<div>
+					<Link to="/reset-password" className="signInForm-forgot-pswd">
+						Forgot your password?
+					</Link>
+				</div>
 				<div className="signInForm-reg-div">
 					Need an account?{' '}
 					<Link to="/register" className="signInForm-reg-acc">

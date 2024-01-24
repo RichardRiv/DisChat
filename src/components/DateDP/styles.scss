@@ -23,6 +23,17 @@ $xlg: 1200px;
 		}
 	}
 
+	.dob-error {
+		font-size: small;
+		color: #fa777c;
+		font-weight: bold;
+	}
+
+	.span-dob-error {
+		font-weight: 500;
+		font-style: italic;
+	}
+
 	.date-container {
 		display: flex;
 		flex-direction: row;

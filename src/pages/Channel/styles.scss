@@ -1,0 +1,38 @@
+$xsm: 400px;
+$sm: 600px;
+$md: 800px;
+$lg: 1000px;
+$xlg: 1200px;
+
+.chnl-bg {
+	background: #323338;
+	height: 100vh;
+
+	.chnl-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+		.chnl-nav {
+			grid-column: span 4;
+		}
+
+		.chnl-server {
+			background: #2c2d31;
+			height: 100vh;
+			color: #f2f3f5;
+			font-weight: bold;
+		}
+		.chnl-title {
+			height: 100vh;
+			grid-column: span 3;
+			color: #f2f3f5;
+			font-weight: bold;
+		}
+		.chnl-members {
+			background: #2c2d31;
+			height: 100vh;
+			color: #f2f3f5;
+			font-weight: bold;
+		}
+	}
+}

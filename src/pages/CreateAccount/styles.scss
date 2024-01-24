@@ -48,8 +48,6 @@ $xlg: 1200px;
 		.signUp-sub-header {
 			font-size: small;
 			margin: 0px;
-			color: rgb(68, 155, 243);
-			text-decoration: none;
 			display: flex;
 			justify-content: center;
 
@@ -59,6 +57,10 @@ $xlg: 1200px;
 				top: 81%;
 				left: 5%;
 			}
+		}
+		.signUp-sub-header-link {
+			color: rgb(68, 155, 243);
+			text-decoration: none;
 		}
 	}
 }
